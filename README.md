@@ -390,6 +390,16 @@ pnpm install
 
 alchemy の無料枠を使用している為、レスポンス過多で、status code429 が返り、起動が遅いですが有料プランに移行することで問題ない起動時間になる想定です。
 
+## 前回のハッカソンからのアップデートポイント
+
+- Metamaskを接続できるようにフロントエンドの改良を実施  
+  AI Crypto Hackathon提出時の状態ではMetamaskなどのウォレットと接続する機能はありませんでした。そこでOneMoreThonでは、フロントエンドの機能を拡充させてプレイヤーがMetamaskを接続できるようにしました！ゲームへのログインを兼ねてMetamaskを接続させます。
+
+- プレイヤーがWorldコントラクトに少額のネイティブトークンを入金できる機能の追加  
+  Metamaskが接続できるようになったことで、送金などの機能をプレイヤーが呼び出すことができるようになりました。ゲームのプレイコストとして少額のネイティブトークンをWorldコントラクトに送金できるようにしました。スキームの設計次第では、この機能を使って運営マージンを取ることもできるようになると考えています。
+
+  また、スマートコントラクト側の機能も呼び出し易くなったので今後の機能拡充として捕獲したモンスターをその場でNFTとしてミントできるようにするなどの機能の追加を考えています。
+
 ## deploy したコントラクト
 
 [World コントラクト - Mumbai](https://mumbai.polygonscan.com/address/0x0b90377Db497D52F580896AC4Af8b4Bc2b7CFEd2)
@@ -401,33 +411,24 @@ alchemy の無料枠を使用している為、レスポンス過多で、status
 ## MetamaskにLaticeのブロックチェーンの設定を追加する時の情報
 
 - ローカルネットワーク
-
   - ネットワーク名  
     Latice Local Network
-
   - RPC URL  
     http://127.0.0.1:8545
-
   - チェーンID  
     31337
-
   - 通貨記号  
-    GO
-
+    GO  
+  
 - テストネット
-
   - ネットワーク名  
     Lattice Test Network
-
   - RPC URL  
     https://follower.testnet-chain.linfra.xyz
-
   - チェーンID  
     4242
-
   - 通貨記号  
     NEXI
-
   - ブロックエクスプローラーのURL  
     https://explorer.testnet-chain.linfra.xyz/
 
