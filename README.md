@@ -398,6 +398,39 @@ alchemy の無料枠を使用している為、レスポンス過多で、status
 
 [Voting コントラクト - Shibuya Network](https://shibuya.subscan.io/account/0xbfDe6e57dD7f54D496B896f6c7d551eE40d3BEB0)
 
+## MetamaskにLaticeのブロックチェーンの設定を追加する時の情報
+
+- ローカルネットワーク
+
+  - ネットワーク名  
+    Latice Local Network
+
+  - RPC URL  
+    http://127.0.0.1:8545
+
+  - チェーンID  
+    31337
+
+  - 通貨記号  
+    GO
+
+- テストネット
+
+  - ネットワーク名  
+    Lattice Test Network
+
+  - RPC URL  
+    https://follower.testnet-chain.linfra.xyz
+
+  - チェーンID  
+    4242
+
+  - 通貨記号  
+    NEXI
+
+  - ブロックエクスプローラーのURL  
+    https://explorer.testnet-chain.linfra.xyz/
+
 ## Github repo
 
 [autonomous-2Ddot-crypto-world](https://github.com/ivs-aw/autonomous-2Ddot-crypto-world)
