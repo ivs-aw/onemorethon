@@ -1,4 +1,4 @@
-# autonomous-2Ddot-crypto-world
+# A2DC world (autonomous-2Ddot-crypto-world)
 
 <img width="1623" alt="スクリーンショット 2023-06-19 22 33 33" src="https://github.com/ivs-aw/autonomous-2Ddot-crypto-world/assets/29562675/1b514592-b513-4953-a261-a93853c191b1">
 
@@ -6,19 +6,24 @@
 
 私たちはブロックチェーンと AI を活用した完全自律型のフルオンチェーンゲーム世界を作りました。
 プレイヤーの行動記録をチェーンに刻み AI がそれを基にゲーム世界と新たなユーザー体験を創出します。
-この基盤を用いた 2D ドットオンチェーンゲームが autonomous-2Ddot-crypto-world です。
+この基盤を用いた 2D ドットオンチェーンゲームが A2DC world (autonomous-2Ddot-crypto-world) です。
+
+## What is Autonomous Worlds?
+
+元々はフルオンチェーンゲームというものと同一の概念であったがここから一歩拡張されたものが Autonomous Worlds というものと考えています。
+「全てのステートとロジックがオンチェーンにあるゲーム」であるという意見がある通り、ブロックチェーンの性質の恩恵を受けることができるので永続性、分散性といった特徴を持ち、一度 Contract をデプロイしたらそれに従って自律的に動作し、世界の「ロジック」に従う限りは自由で非中央集権的な世界を構築することができるものです。
 
 ## このプロダクトのバリュー
 
 プレイヤーのプレイした情報を基に新たなフィールドやモンスターを生成していくゲームアプリのプロトタイプを開発しました。  
-これはまだ2Dの世界だけですが、いずれメタバース空間にも応用が効くと考えています。プレイヤー達自らもゲーム世界の拡張に携われるようになる可能性があります！！
+これはまだ 2D の世界だけですが、いずれメタバース空間にも応用が効くと考えています。プレイヤー達自らもゲーム世界の拡張に携われるようになる可能性があります。
 
-## Oasysブロックチェーンを利用する理由
+## Oasys ブロックチェーンを利用する理由
 
-Oasysはゲームプロジェクトに親和性の高いチェーンですので、ゲーム上での操作一つ一つがオンチェーンに刻まれるMUDとの相性が良いと考えています。  
+Oasys はゲームプロジェクトに親和性の高いチェーンですので、ゲーム上での操作一つ一つがオンチェーンに刻まれる MUD との相性が良いと考えています。
 
-また、従来のブロックチェーンであれば操作の度に少額のガス代がかかってしまいますが、Oasysであればガスレスでそれを実現することができると考えました！  
-デプロイするコントラクト数も膨大なのでそこにガス代がかからない点もMUDとの相性が良いと考えています！
+また、従来のブロックチェーンであれば操作の度に少額のガス代がかかってしまいますが、Oasys であればガスレスでそれを実現することができると考えました。
+デプロイするコントラクト数も膨大なのでそこにガス代がかからない点も MUD との相性が良いと考えています。
 
 ## 対応した問題
 
@@ -46,7 +51,8 @@ pnpm install
     ```bash
     pnpm run dev
     ```
-  - Mumbaiにデプロイしてあるコントラクトと連動してフロントを起動する場合
+
+  - Mumbai にデプロイしてあるコントラクトと連動してフロントを起動する場合
 
     ```bash
     cd packages/client && pnpm run vite
@@ -109,9 +115,9 @@ pnpm install
 
 - AA
 
-  - 初期化(config.jsonファイルを生成する。)
+  - 初期化(config.json ファイルを生成する。)
 
-    まず`erc-4337-example`フォルダ配下に`.env`ファイルを生成し、StackUpのページで生成されたAPI_KEYを貼り付ける
+    まず`erc-4337-example`フォルダ配下に`.env`ファイルを生成し、StackUp のページで生成された API_KEY を貼り付ける
 
     ```bash
     pnpm erc-4337-example run init
@@ -131,8 +137,7 @@ pnpm install
 
     [【PolygonScan】0x7f9996269c306468C7E96b4B76f3fB636F20Fb6f](https://mumbai.polygonscan.com/address/0x7f9996269c306468C7E96b4B76f3fB636F20Fb6f)
 
-
-  - コントラクトウォレットからMaticを送金するコマンド
+  - コントラクトウォレットから Matic を送金するコマンド
 
     ```bash
     pnpm erc-4337-example run simpleAccount transfer --to 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072 --amount 0.01
@@ -163,7 +168,7 @@ pnpm install
 
     [0x1b64093ad7319f312bbc1364146989cdfd55547b3dc45c829449500547ff08f8](https://mumbai.polygonscan.com/tx/0x1b64093ad7319f312bbc1364146989cdfd55547b3dc45c829449500547ff08f8)
 
-  - コントラクトウォレットからERC20トークンを送金するコマンド
+  - コントラクトウォレットから ERC20 トークンを送金するコマンド
 
     ```bash
     pnpm erc-4337-example run simpleAccount erc20Transfer --token 0x3870419Ba2BBf0127060bCB37f69A1b1C090992B --to 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072 --amount 100
@@ -191,7 +196,7 @@ pnpm install
     Transaction hash: 0x2fae4c4f8aff1d14536bb6fa26b0c638816e456710ec035bc314de5c495c09fb
     ```
 
-  - Paymasterで使うERC20トークンのApproveを行うためのコマンド
+  - Paymaster で使う ERC20 トークンの Approve を行うためのコマンド
 
     ```bash
     pnpm erc-4337-example run simpleAccount erc20Approve --token 0x3870419Ba2BBf0127060bCB37f69A1b1C090992B --spender 0xE93ECa6595fe94091DC1af46aaC2A8b5D7990770 --amount 500
@@ -219,7 +224,7 @@ pnpm install
     Transaction hash: 0xe14656a1298e184bd34f2a5190f57306d272a4cf16d30f847c027d9976ed305d
     ```
 
-  - Paymaster を使ってERC20トークンをを送金する方法
+  - Paymaster を使って ERC20 トークンをを送金する方法
 
     ```bash
     pnpm erc-4337-example run simpleAccount erc20Transfer --token 0x3870419Ba2BBf0127060bCB37f69A1b1C090992B --to 0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072 --amount 100 --withPaymaster
@@ -252,7 +257,7 @@ pnpm install
     [【PolygonScan】0xfe4f5145f6e09952a5ba9e956ed0c25e3fa4c7f1?a=0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072](https://mumbai.polygonscan.com/token/0xfe4f5145f6e09952a5ba9e956ed0c25e3fa4c7f1?a=0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072)
 
 - ChainLink
-  
+
   - `FunctionsConsumer`コントラクトのデプロイ
 
     ```bash
@@ -344,7 +349,7 @@ pnpm install
 | 3   | React               |
 | 4   | pnpm                |
 | 5   | hardhat             |
-| 6   | OpenAI  API         |
+| 6   | OpenAI API          |
 | 7   | Chainlink functions |
 | 8   | Tailwind CSS        |
 | 9   | Vite                |
@@ -382,7 +387,7 @@ pnpm install
 
 - MUD のドキュメントや、コミュニティで質問から、フレームワークの意図や使い方を学びました。その中で、適したチェーンやアプリケーションの構成を理解しました。
 
-- Oasysブロックチェーンの特徴を学ぶことができました。(ゲーム用途に特化した高トランザクション処理性能・ガスレストランザクション)
+- Oasys ブロックチェーンの特徴を学ぶことができました。(ゲーム用途に特化した高トランザクション処理性能・ガスレストランザクション)
 
 ## 次をどうするか?
 
@@ -392,13 +397,15 @@ alchemy の無料枠を使用している為、レスポンス過多で、status
 
 ## 前回のハッカソンからのアップデートポイント
 
-- Metamaskを接続できるようにフロントエンドの改良を実施  
-  AI Crypto Hackathon提出時の状態ではMetamaskなどのウォレットと接続する機能はありませんでした。そこでOneMoreThonでは、フロントエンドの機能を拡充させてプレイヤーがMetamaskを接続できるようにしました！ゲームへのログインを兼ねてMetamaskを接続させます。
+- AA における拡張も検討しつつも、まずはモンスターを NFT 化し wallet で保持することができる体験に着手しています。
 
-- プレイヤーがWorldコントラクトに少額のネイティブトークンを入金できる機能の追加  
-  Metamaskが接続できるようになったことで、送金などの機能をプレイヤーが呼び出すことができるようになりました。ゲームのプレイコストとして少額のネイティブトークンをWorldコントラクトに送金できるようにしました。スキームの設計次第では、この機能を使って運営マージンを取ることもできるようになると考えています。
+- Metamask を接続できるようにフロントエンドの改良を実施  
+  AI Crypto Hackathon 提出時の状態では Metamask などのウォレットと接続する機能はありませんでした。そこで OneMoreThon では、フロントエンドの機能を拡充させてプレイヤーが Metamask を接続できるようにしました！ゲームへのログインを兼ねて Metamask を接続させます。
 
-  また、スマートコントラクト側の機能も呼び出し易くなったので今後の機能拡充として捕獲したモンスターをその場でNFTとしてミントできるようにするなどの機能の追加を考えています。
+- プレイヤーが World コントラクトに少額のネイティブトークンを入金できる機能の追加  
+  Metamask が接続できるようになったことで、送金などの機能をプレイヤーが呼び出すことができるようになりました。ゲームのプレイコストとして少額のネイティブトークンを World コントラクトに送金できるようにしました。スキームの設計次第では、この機能を使って運営マージンを取ることもできるようになると考えています。
+
+  また、スマートコントラクト側の機能も呼び出し易くなったので今後の機能拡充として捕獲したモンスターをその場で NFT としてミントできるようにするなどの機能の追加を考えています。
 
 ## deploy したコントラクト
 
@@ -408,28 +415,27 @@ alchemy の無料枠を使用している為、レスポンス過多で、status
 
 [Voting コントラクト - Shibuya Network](https://shibuya.subscan.io/account/0xbfDe6e57dD7f54D496B896f6c7d551eE40d3BEB0)
 
-## MetamaskにLaticeのブロックチェーンの設定を追加する時の情報
+## Metamask に Lattice のブロックチェーンの設定を追加する時の情報
 
 - ローカルネットワーク
   - ネットワーク名  
-    Latice Local Network
+    Lattice Local Network
   - RPC URL  
     http://127.0.0.1:8545
-  - チェーンID  
+  - チェーン ID  
     31337
   - 通貨記号  
-    GO  
-  
+    GO
 - テストネット
   - ネットワーク名  
     Lattice Test Network
   - RPC URL  
     https://follower.testnet-chain.linfra.xyz
-  - チェーンID  
+  - チェーン ID  
     4242
   - 通貨記号  
     NEXI
-  - ブロックエクスプローラーのURL  
+  - ブロックエクスプローラーの URL  
     https://explorer.testnet-chain.linfra.xyz/
 
 ## Github repo
