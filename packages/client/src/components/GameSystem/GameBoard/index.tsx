@@ -1,7 +1,7 @@
 import { useComponentValue, useEntityQuery } from '@latticexyz/react';
 import { Entity, Has, getComponentValueStrict } from '@latticexyz/recs';
 import { hexToArray } from '@latticexyz/utils';
-import { useMUD } from '../../../context/MUDContext';
+import { useMUD } from '../../../context/MudContext';
 import { MonsterType, monsterTypes } from '../../../utils/monsterTypes';
 import { TerrainType, terrainTypes } from '../../../utils/terrainTypes';
 import { useKeyboardMovement } from '../../../utils/useKeyboardMovement';
@@ -10,7 +10,7 @@ import { GameMap } from './../GameMap';
 
 /**
  * GameBoard Component
- * @returns 
+ * @returns
  */
 export const GameBoard = () => {
   useKeyboardMovement();
