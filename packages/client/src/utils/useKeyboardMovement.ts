@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useMUD } from "../context/MUDContext";
+import { useEffect } from 'react';
+import { useMUD } from '../context/MudContext';
 
 /**
  * useKeyboardMovement method
@@ -11,21 +11,21 @@ export const useKeyboardMovement = () => {
 
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
-      if (e.key === "ArrowUp") {
+      if (e.key === 'ArrowUp') {
         moveBy(0, -1);
       }
-      if (e.key === "ArrowDown") {
+      if (e.key === 'ArrowDown') {
         moveBy(0, 1);
       }
-      if (e.key === "ArrowLeft") {
+      if (e.key === 'ArrowLeft') {
         moveBy(-1, 0);
       }
-      if (e.key === "ArrowRight") {
+      if (e.key === 'ArrowRight') {
         moveBy(1, 0);
       }
     };
 
-    window.addEventListener("keydown", listener);
-    return () => window.removeEventListener("keydown", listener);
+    window.addEventListener('keydown', listener);
+    return () => window.removeEventListener('keydown', listener);
   }, [moveBy]);
 };

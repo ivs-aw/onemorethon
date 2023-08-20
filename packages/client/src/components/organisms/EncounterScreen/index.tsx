@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { twMerge } from 'tailwind-merge';
-import { useMUD } from './../../../context/MUDContext';
+import { useMUD } from '../../../context/MudContext';
 import './../../../styles/index.css';
-import { MonsterCatchResult } from './../../../utils/monsterCatchResult';
+import { MonsterCatchResult } from '../../../utils/monsterCatchResult';
 
 type Props = {
   monsterName: string;
@@ -12,8 +12,8 @@ type Props = {
 
 /**
  * EncounterScreen Component
- * @param param0 
- * @returns 
+ * @param param0
+ * @returns
  */
 export const EncounterScreen = ({ monsterName, monsterEmoji }: Props) => {
   const {
