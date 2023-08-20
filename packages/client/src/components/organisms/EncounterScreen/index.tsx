@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { twMerge } from 'tailwind-merge';
 import { useMUD } from '../../../context/MudContext';
 import './../../../styles/index.css';
-import { MonsterCatchResult } from './../../../utils/monsterCatchResult';
+import { MonsterCatchResult } from '../../../utils/monsterCatchResult';
 
 type Props = {
   monsterName: string;

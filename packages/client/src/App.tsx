@@ -1,6 +1,6 @@
 import { SyncState } from '@latticexyz/network';
 import { useComponentValue } from '@latticexyz/react';
-import { GameBoard } from './components/GameSystem/GameBoard';
+import { GameBoard } from './components/organisms/GameBoard';
 import { useMUD } from './context/MudContext';
 
 export const App = () => {

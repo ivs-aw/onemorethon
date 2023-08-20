@@ -5,8 +5,8 @@ import { useMUD } from '../../../context/MudContext';
 import { MonsterType, monsterTypes } from '../../../utils/monsterTypes';
 import { TerrainType, terrainTypes } from '../../../utils/terrainTypes';
 import { useKeyboardMovement } from '../../../utils/useKeyboardMovement';
-import { EncounterScreen } from './../EncounterScreen';
-import { GameMap } from './../GameMap';
+import { EncounterScreen } from '../EncounterScreen';
+import { GameMap } from '../GameMap';
 
 /**
  * GameBoard Component

@@ -5,7 +5,7 @@ import { mount as mountDevTools } from '@latticexyz/dev-tools';
 import ReactDOM from 'react-dom/client';
 import { ToastContainer } from 'react-toastify';
 import { App } from './App';
-import WalletConnection from './components/WalletConnection';
+import WalletConnection from './components/organisms/WalletConnection';
 import { MUDProvider } from './context/MudContext';
 import { setup } from './mud/setup';
 

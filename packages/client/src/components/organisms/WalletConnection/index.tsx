@@ -1,6 +1,6 @@
 import React, { ReactNode, createContext, useState } from 'react';
 import { ethers } from 'ethers';
-import { SetupResult } from '../../mud/setup';
+import { SetupResult } from '../../../mud/setup';
 
 let injectedProvider = false;
 
@@ -14,7 +14,6 @@ type Props = {
 };
 
 const isMetaMask = injectedProvider ? window.ethereum.isMetaMask : false;
-console.log('isMetamask:', isMetaMask);
 
 // create walletContext
 export const walletContext = createContext<any | null>(null);
