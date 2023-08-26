@@ -2,6 +2,10 @@
 
 <img width="1623" alt="スクリーンショット 2023-06-19 22 33 33" src="https://github.com/ivs-aw/autonomous-2Ddot-crypto-world/assets/29562675/1b514592-b513-4953-a261-a93853c191b1">
 
+## プロダクトドキュメント Product Document
+詳細な解説は以下を参照ください。
+https://www.canva.com/design/DAFnBLosE9c/8kG1m2u5yL5VROHvWCDnBw/watch?utm_content=DAFnBLosE9c&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
 ## 概要 About
 
 私たちはブロックチェーンと AI を活用した完全自律型のフルオンチェーンゲーム世界を作りました。
